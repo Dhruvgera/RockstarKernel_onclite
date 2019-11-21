@@ -12,7 +12,7 @@ export TZ="Asia/Kolkata";
 mkdir -p $HOME/TC
 git clone https://github.com/Dhruvgera/AnyKernel3.git -b onclite
 git clone git://github.com/RaphielGang/aarch64-linux-gnu-8.x $HOME/TC/aarch64-linux-gnu-8.x --depth=1
-git clone https://github.com/VRanger/clang.git dragontc
+git clone git://github.com/VRanger/dragontc dragontc
 git clone -q https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ "$HOME"/TC/gcc32 --depth=1 
 function check_toolchain() {
  
