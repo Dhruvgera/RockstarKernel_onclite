@@ -11,7 +11,7 @@ export TZ="Asia/Kolkata";
 # Kernel compiling script
 mkdir -p $HOME/TC
 git clone https://github.com/Dhruvgera/AnyKernel3.git -b onclite
-git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 $HOME/TC/aarch64-linux-gnu-8.x --depth=1
+git clone https://github.com/mylove90/aarch64-linux-android-4.9 $HOME/TC/aarch64-linux-gnu-8.x --depth=1
 git clone https://github.com/VRanger/clang.git dragontc
 git clone -q https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ "$HOME"/TC/gcc32 --depth=1 
 function check_toolchain() {
