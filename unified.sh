@@ -9,9 +9,9 @@ git config --global user.name "Dhruv"
 export TZ="Asia/Kolkata";
  
 # Kernel compiling script
-mkdir -p $HOME/TC
+mkdir -p /home/TC
 git clone https://github.com/Dhruvgera/AnyKernel3.git -b onclite
-git clone https://github.com/RaphielGang/aarch64-linux-gnu-8.x $HOME/TC/aarch64-linux-gnu-8.x --depth=1
+git clone https://github.com/RaphielGang/aarch64-linux-gnu-8.x /home/TC/aarch64-linux-gnu-8.x --depth=1
 git clone https://github.com/VRanger/clang.git dragontc
 git clone -q https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ "$HOME"/TC/gcc32 --depth=1 
 function check_toolchain() {
@@ -24,7 +24,6 @@ sed -e 's/gcc//')";
         echo -e "Using toolchain: $(${CROSS_COMPILE}gcc --version | head -1)";
     else
         echo -e "No suitable toolchain found in ${TOOLCHAIN}";
-        exit 1;
     fi
 }
  
